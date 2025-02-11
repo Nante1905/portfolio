@@ -1,0 +1,22 @@
+.about-root {
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  //   position: relative;
+  //   background: linear-gradient(0.62turn, #eeeeee 11%, #eeeeee 47%, #589cb0 100%);
+
+  &_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding-inline: 5%;
+    padding-block: 8%;
+    gap: 10%;
+    flex-wrap: wrap-reverse;
+  }
+
+  &_img {
+    margin: 20px;
+  }
+}

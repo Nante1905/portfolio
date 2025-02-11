@@ -1,0 +1,26 @@
+.about-descri {
+  &_text {
+    max-width: 500px;
+    font-weight: 500;
+
+    .blue,
+    .red {
+      font-weight: 600;
+    }
+
+    p:nth-child(3) {
+      text-align: right;
+    }
+
+    h2 {
+      font-size: 4rem;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-block: 20px;
+    }
+  }
+}

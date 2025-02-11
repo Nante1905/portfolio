@@ -5,7 +5,11 @@ import { Typewriter } from "react-simple-typewriter";
 const AppTypeWriter = () => {
   return (
     <Typewriter
-      words={["web applications", "mobile apps", "digital products"]}
+      words={[
+        "des applications web",
+        "des applications mobiles",
+        "vos projets numériques",
+      ]}
       loop={3}
     />
   );
