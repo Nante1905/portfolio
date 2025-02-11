@@ -12,15 +12,24 @@
   border-radius: 15px;
 
   transition: background 0.3s ease-in-out;
+  z-index: 5;
 
   &:hover {
     background: rgba(255, 255, 255, 0.4);
     cursor: pointer;
   }
 
+  @media screen and (max-width: 768px) {
+    min-width: unset;
+    width: 160px;
+  }
+
   &_title {
     font-size: 3.5rem;
     font-weight: 1000;
     margin-block: 50px;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 }

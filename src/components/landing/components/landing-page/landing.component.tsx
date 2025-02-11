@@ -24,7 +24,11 @@ const LandingComponent = () => {
       <section className="landing_cards">
         <LandingCardComponent title="BSc." description="in computer science" />
         <LandingCardComponent title="1" description="year of experience" />
-        <Link href="mailto:minoharynantenaina@gmail.com" target="_blank">
+        <Link
+          href="mailto:minoharynantenaina@gmail.com"
+          target="_blank"
+          className="landing-card-link"
+        >
           <LandingCardComponent
             title={
               <Image

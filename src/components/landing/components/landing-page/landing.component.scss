@@ -4,9 +4,16 @@
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(0.4turn, #ffffff 1%, #bfdbf7 51%, #1f7a8c 93%);
-  padding-inline: 95px;
+  padding-inline: 5%;
+  // @media screen and (max-width: 768px) {
+  //   padding-inline: 20px;
+  //}
+
   flex-wrap: wrap;
   z-index: 5;
+  @media screen and (max-width: 768px) {
+    padding-block: 10%;
+  }
   &_title {
     font-size: 5rem;
     font-weight: 1000;
@@ -15,6 +22,11 @@
     max-width: 60%;
     line-height: 105%;
     z-index: 5;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+      max-width: unset;
+    }
 
     .colored {
       color: #60a7a8;
@@ -34,5 +46,19 @@
     align-items: center;
     row-gap: 20px;
     padding-inline: 40px;
+    @media screen and (max-width: 768px) {
+      // grid-template-columns: 1fr;
+      width: 100%;
+      justify-items: center;
+      padding-inline: unset;
+    }
+
+    .landing-card-link {
+      z-index: 5;
+      img {
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }
   }
 }
