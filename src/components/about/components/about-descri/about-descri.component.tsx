@@ -27,7 +27,14 @@ const AboutDescriptionComponent = () => {
           projet.
         </p>
         <div className="text-center">
-          <ButtonComponent>Télécharger mon CV</ButtonComponent>
+          <a
+            href="https://drive.google.com/file/d/1Or_a2-LtQ9tw9qKrSG_aPzFOuepxqguT/view?usp=drive_link"
+            target="_blank"
+          >
+            <ButtonComponent className="about-btn">
+              Télécharger mon CV
+            </ButtonComponent>
+          </a>
         </div>
       </section>
     </div>

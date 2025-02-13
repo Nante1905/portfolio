@@ -1,18 +1,33 @@
+.landing-warper {
+  position: relative;
+}
+
+.landing-background {
+  background: linear-gradient(0.4turn, #ffffff 1%, #bfdbf7 51%, #1f7a8c 93%);
+  z-index: -10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .landing {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   // background: linear-gradient(0.4turn, #ffffff 1%, #bfdbf7 51%, #1f7a8c 93%);
-  background: linear-gradient(0.4turn, #ffffff 1%, #bfdbf7 51%, #1f7a8c 93%);
 
   padding-inline: 5%;
+  padding-block: 5%;
   // @media screen and (max-width: 768px) {
   //   padding-inline: 20px;
   //}
 
   flex-wrap: wrap;
-  z-index: 5;
+
+  & > * {
+    z-index: 0;
+  }
   @media screen and (max-width: 768px) {
     padding-block: 10%;
   }

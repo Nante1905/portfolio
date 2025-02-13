@@ -1,9 +1,28 @@
 .about-img {
   img {
     max-width: unset !important;
+    &:hover {
+      cursor: pointer;
+      animation: imgAnimation 0.5s ease-in-out;
+    }
   }
   .img {
     border-radius: 15px;
     box-shadow: rgba(#fff, 0.76) 1px 1px 35px 9px;
+  }
+
+  @keyframes imgAnimation {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-1deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
   }
 }

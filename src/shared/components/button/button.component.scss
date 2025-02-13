@@ -3,4 +3,16 @@
   padding-block: 1rem;
   padding-inline: 2rem;
   border-radius: 15px;
+
+  // &:hover {
+  //   background-color: #d1b9b9;
+  //   cursor: pointer;
+  // }
+
+  // add hover animation
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: #d2b0b0;
+    cursor: pointer;
+  }
 }
