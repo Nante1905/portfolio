@@ -10,7 +10,7 @@ const AppTypeWriter = () => {
         "des applications mobiles",
         "vos projets numériques",
       ]}
-      loop={3}
+      loop={2}
     />
   );
 };
