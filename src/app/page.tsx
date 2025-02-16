@@ -1,5 +1,6 @@
 import AboutRoot from "@/components/about/containers/about.root";
 import LandingComponent from "@/components/landing/containers/landing-page/landing.component";
+import NumbersComponent from "@/components/numbers/numbers.component";
 import "./page.scss";
 
 export default function Home() {
@@ -8,14 +9,7 @@ export default function Home() {
       <LandingComponent />
       <AboutRoot />
 
-      <div className="circles">
-        <div>1</div>
-        <div>0</div>
-        <div>1</div>
-        <div>0</div>
-        <div>0</div>
-        <div>1</div>
-      </div>
+      <NumbersComponent />
     </div>
   );
 }

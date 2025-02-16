@@ -1,0 +1,58 @@
+%numbers {
+  display: block;
+  position: absolute;
+  left: 90px;
+  top: calc(100vh);
+  animation: circles_animation 6s infinite linear;
+}
+.circles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  // z-index: 1000;
+  z-index: -9;
+  top: 0;
+  left: 0;
+  // & > * {
+  //   // z-index: 10000;
+  // }
+  div:nth-child(1) {
+    @extend %numbers;
+  }
+  div:nth-child(2) {
+    @extend %numbers;
+    left: 30%;
+    animation: circles_animation 10s infinite linear;
+  }
+  div:nth-child(3) {
+    @extend %numbers;
+    left: 50%;
+    animation: circles_animation 16s infinite linear;
+  }
+  div:nth-child(4) {
+    @extend %numbers;
+    left: 60%;
+    animation: circles_animation 12s infinite linear;
+  }
+  div:nth-child(5) {
+    @extend %numbers;
+    left: 70%;
+    animation: circles_animation 16s infinite linear;
+  }
+  div:nth-child(6) {
+    @extend %numbers;
+    left: 80%;
+    animation: circles_animation 9s infinite linear;
+  }
+}
+
+@keyframes circles_animation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(4turn);
+  }
+}
