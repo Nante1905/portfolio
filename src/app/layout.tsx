@@ -1,3 +1,4 @@
+import { META_DESCRIPTION, META_TITLE } from "@/shared/constants/meta";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Script from "next/script";
@@ -10,8 +11,12 @@ const montserrat = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Minohary Nantenaina",
-  description: "Bienvenue sur le portfolio de Minohary Nantenaina",
+  title: META_TITLE,
+  description: META_DESCRIPTION,
+  openGraph: {
+    title: META_TITLE,
+    description: META_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
@@ -20,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BLWY5SQWPB"
