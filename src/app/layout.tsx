@@ -36,7 +36,7 @@ export default function RootLayout({
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-BLWY5SQWPB');`}
+  gtag('config', 'G-BLWY5SQWPB', { 'anonymize_ip': true });`}
         </Script>
       </head>
       <body className={`${montserrat.className} antialiased`}>{children}</body>
