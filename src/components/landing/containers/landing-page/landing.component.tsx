@@ -31,7 +31,7 @@ const LandingComponent = () => {
           />
           <div className="flex flex-row gap-3 md:gap-3  md:flex-nowrap justify-center md:items-center w-full">
             <LandingCardComponent title="Msc." description="BIHAR" />
-            <LandingCardComponent title="3" description="année d'expérience" />
+            <LandingCardComponent title="3" description="années d'expérience" />
             <LandingCardComponent title="+4" description="Projets réels" />
           </div>
           {/* <Link
