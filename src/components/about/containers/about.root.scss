@@ -9,14 +9,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: max-content;
+    // height: max-content;
     padding-inline: 5%;
     padding-block: 8%;
-    gap: 10%;
-    flex-wrap: wrap-reverse;
+    // gap: 10%;
+    flex-wrap: wrap;
   }
 
   &_img {
     margin: 20px;
+  }
+
+  &_description {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  &_academic {
+    flex: 1;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-root {
+    &_content {
+      gap: 3rem;
+    }
+
+    &_description,
+    &_academic {
+      min-width: 100%;
+    }
   }
 }

@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  // min-height: 100vh;
   // background: linear-gradient(0.4turn, #ffffff 1%, #bfdbf7 51%, #1f7a8c 93%);
 
   padding-inline: 5%;
@@ -23,13 +23,10 @@
   //   padding-inline: 20px;
   //}
 
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 
   & > * {
     z-index: 0;
-  }
-  @media screen and (max-width: 768px) {
-    padding-block: 10%;
   }
 
   &_title {
@@ -65,18 +62,19 @@
   }
 
   &_cards {
-    width: 500px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 30px;
     justify-content: center;
-    align-items: center;
-    row-gap: 20px;
-    padding-inline: 40px;
-    @media screen and (max-width: 768px) {
-      // grid-template-columns: 1fr;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 900px;
+    z-index: 5;
+
+    @media screen and (max-width: 968px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
       width: 100%;
-      justify-items: center;
-      padding-inline: unset;
     }
 
     .landing-card-link {

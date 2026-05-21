@@ -1,7 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
 import LandingCardComponent from "../../components/cards/landing-card.component";
-import AppTypeWriter from "../../components/typewriter/typewriter.component";
+import ProfilePremiumComponent from "../../components/profile-premium/profile-premium.component";
 import "./landing.component.scss";
 
 const LandingComponent = () => {
@@ -9,32 +7,34 @@ const LandingComponent = () => {
     // <section>
 
     <div className="landing-warper">
-      <div className="landing-background"></div>
-      <div className="landing">
+      {/* <div className="landing-background"></div> */}
+      <div className="landing flex-wrap md:flex-nowrap">
         <section className="landing_title">
           <span className="landing_title_greeting">
-            <h1>
-              Hello, je suis <span className="red-fade">Nantenaina</span>.
-            </h1>
+            <p>
+              Hello, je suis{" "}
+              <span className="text-green-accent">Nantenaina</span>.
+            </p>
           </span>
           <h1>
-            Construire{" "}
-            <span className="colored">
-              <AppTypeWriter />
-              <span style={{ display: "none" }}>des produits numériques</span>.
-              <br />
-            </span>
-            Faites de votre projet de rêve une réalité avec moi.
+            Développeur Fullstack <br />
+            <span className="text-green-primary">Web & Mobile</span>
           </h1>
+          <p className="my-4 text-sm font-light">
+            - <i>Propulsons votre business ensemble.</i>
+          </p>
         </section>
         <section className="landing_cards">
-          <LandingCardComponent title="BSc." description="en informatique" />
-          <LandingCardComponent
-            title="+1"
-            description="année d'expérience"
-          />{" "}
-          <LandingCardComponent title="+3" description="Projets réels" />
-          <Link
+          <ProfilePremiumComponent
+            imageSrc="/IMG_0608.png"
+            imageAlt="Nantenaina - Développeur Fullstack"
+          />
+          <div className="flex flex-row gap-3 md:gap-3  md:flex-nowrap justify-center md:items-center w-full">
+            <LandingCardComponent title="Msc." description="BIHAR" />
+            <LandingCardComponent title="3" description="année d'expérience" />
+            <LandingCardComponent title="+4" description="Projets réels" />
+          </div>
+          {/* <Link
             href="mailto:minoharynantenaina@gmail.com"
             target="_blank"
             className="landing-card-link"
@@ -52,7 +52,7 @@ const LandingComponent = () => {
               }
               description="Contactez moi"
             />
-          </Link>
+          </Link> */}
         </section>
       </div>
     </div>

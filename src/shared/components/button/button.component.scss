@@ -1,8 +1,10 @@
 .app-button {
-  background-color: #c89292;
-  padding-block: 1rem;
+  background-color: var(--color-green-primary);
   padding-inline: 2rem;
   border-radius: 15px;
+  height: 3rem;
+
+  color: white;
 
   // &:hover {
   //   background-color: #d1b9b9;
@@ -12,7 +14,7 @@
   // add hover animation
   transition: background-color 0.3s ease-in-out;
   &:hover {
-    background-color: #d2b0b0;
+    background-color: var(--color-green-secondary);
     cursor: pointer;
   }
 }
