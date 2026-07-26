@@ -11,6 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        green: {
+          primary: "var(--color-green-primary)",
+          secondary: "var(--color-green-secondary)",
+          accent: "var(--color-green-accent)",
+        },
+      },
+      fontFamily: {
+        heading: ["var(--font-montserrat)", "sans-serif"],
       },
     },
   },

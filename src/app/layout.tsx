@@ -6,8 +6,9 @@ import "../shared/styles/text.scss";
 import "./globals.css";
 
 const montserrat = localFont({
-  src: "./fonts/Montserrat-VariableFont_wght.ttf",
+  src: "./fonts/montserat.ttf",
   weight: "100 900",
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -39,8 +40,11 @@ export default function RootLayout({
   gtag('config', 'G-BLWY5SQWPB', { 'anonymize_ip': true });`}
         </Script>
       </head>
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body
+        className={`${montserrat.className} ${montserrat.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
-
