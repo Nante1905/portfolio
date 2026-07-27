@@ -1,4 +1,6 @@
 import AboutRoot from "@/components/about/containers/about.root";
+import AcademicRoot from "@/components/academic/containers/academic.root";
+import ExperiencesRoot from "@/components/experiences/containers/ExperiencesRoot";
 import LandingComponent from "@/components/landing/containers/landing-page/landing.component";
 import NumbersComponent from "@/components/numbers/numbers.component";
 import "./page.scss";
@@ -8,9 +10,10 @@ export default function Home() {
     <div className="app">
       <LandingComponent />
       <AboutRoot />
+      <AcademicRoot />
+      <ExperiencesRoot />
 
       <NumbersComponent />
     </div>
   );
 }
-

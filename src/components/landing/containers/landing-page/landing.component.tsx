@@ -30,9 +30,15 @@ const LandingComponent = () => {
             imageAlt="Nantenaina - Développeur Fullstack"
           />
           <div className="flex flex-row gap-3 md:gap-3  md:flex-nowrap justify-center md:items-center w-full">
-            <LandingCardComponent title="Msc." description="BIHAR" />
-            <LandingCardComponent title="3" description="années d'expérience" />
-            <LandingCardComponent title="+4" description="Projets réels" />
+            <LandingCardComponent
+              title="100%"
+              description="Clients satisfaits"
+            />
+            <LandingCardComponent
+              title="3+"
+              description="années d'expérience"
+            />
+            <LandingCardComponent title="4+" description="Projets livrés" />
           </div>
           {/* <Link
             href="mailto:minoharynantenaina@gmail.com"
